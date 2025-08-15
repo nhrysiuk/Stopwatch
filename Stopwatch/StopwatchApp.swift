@@ -1,17 +1,13 @@
-//
-//  StopwatchApp.swift
-//  Stopwatch
-//
-//  Created by Анастасія Грисюк on 13.08.2025.
-//
-
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct StopwatchApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StopwatchView(store: Store(initialState: StopwatchFeature.State()) {
+                StopwatchFeature()
+            })
         }
     }
 }

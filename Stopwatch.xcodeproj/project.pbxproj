@@ -6,15 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1AEEA9F32E4C947F004841D4 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 1AEEA9F22E4C947F004841D4 /* ComposableArchitecture */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		1AEEA9D22E4C9258004841D4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1AEEA9BC2E4C9256004841D4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1AEEA9C32E4C9256004841D4;
-			remoteInfo = Stopwatch;
-		};
-		1AEEA9DC2E4C9258004841D4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1AEEA9BC2E4C9256004841D4 /* Project object */;
 			proxyType = 1;
@@ -26,7 +23,6 @@
 /* Begin PBXFileReference section */
 		1AEEA9C42E4C9256004841D4 /* Stopwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stopwatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AEEA9D12E4C9258004841D4 /* StopwatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StopwatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1AEEA9DB2E4C9258004841D4 /* StopwatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StopwatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -40,11 +36,6 @@
 			path = StopwatchTests;
 			sourceTree = "<group>";
 		};
-		1AEEA9DE2E4C9258004841D4 /* StopwatchUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = StopwatchUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,17 +43,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AEEA9F32E4C947F004841D4 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1AEEA9CE2E4C9258004841D4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1AEEA9D82E4C9258004841D4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -77,7 +62,6 @@
 			children = (
 				1AEEA9C62E4C9256004841D4 /* Stopwatch */,
 				1AEEA9D42E4C9258004841D4 /* StopwatchTests */,
-				1AEEA9DE2E4C9258004841D4 /* StopwatchUITests */,
 				1AEEA9C52E4C9256004841D4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,7 +71,6 @@
 			children = (
 				1AEEA9C42E4C9256004841D4 /* Stopwatch.app */,
 				1AEEA9D12E4C9258004841D4 /* StopwatchTests.xctest */,
-				1AEEA9DB2E4C9258004841D4 /* StopwatchUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +95,7 @@
 			);
 			name = Stopwatch;
 			packageProductDependencies = (
+				1AEEA9F22E4C947F004841D4 /* ComposableArchitecture */,
 			);
 			productName = Stopwatch;
 			productReference = 1AEEA9C42E4C9256004841D4 /* Stopwatch.app */;
@@ -140,29 +124,6 @@
 			productReference = 1AEEA9D12E4C9258004841D4 /* StopwatchTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		1AEEA9DA2E4C9258004841D4 /* StopwatchUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1AEEA9EB2E4C9258004841D4 /* Build configuration list for PBXNativeTarget "StopwatchUITests" */;
-			buildPhases = (
-				1AEEA9D72E4C9258004841D4 /* Sources */,
-				1AEEA9D82E4C9258004841D4 /* Frameworks */,
-				1AEEA9D92E4C9258004841D4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1AEEA9DD2E4C9258004841D4 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				1AEEA9DE2E4C9258004841D4 /* StopwatchUITests */,
-			);
-			name = StopwatchUITests;
-			packageProductDependencies = (
-			);
-			productName = StopwatchUITests;
-			productReference = 1AEEA9DB2E4C9258004841D4 /* StopwatchUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -180,10 +141,6 @@
 						CreatedOnToolsVersion = 16.4;
 						TestTargetID = 1AEEA9C32E4C9256004841D4;
 					};
-					1AEEA9DA2E4C9258004841D4 = {
-						CreatedOnToolsVersion = 16.4;
-						TestTargetID = 1AEEA9C32E4C9256004841D4;
-					};
 				};
 			};
 			buildConfigurationList = 1AEEA9BF2E4C9256004841D4 /* Build configuration list for PBXProject "Stopwatch" */;
@@ -195,6 +152,9 @@
 			);
 			mainGroup = 1AEEA9BB2E4C9256004841D4;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1AEEA9F12E4C947F004841D4 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1AEEA9C52E4C9256004841D4 /* Products */;
 			projectDirPath = "";
@@ -202,7 +162,6 @@
 			targets = (
 				1AEEA9C32E4C9256004841D4 /* Stopwatch */,
 				1AEEA9D02E4C9258004841D4 /* StopwatchTests */,
-				1AEEA9DA2E4C9258004841D4 /* StopwatchUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -216,13 +175,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1AEEA9CF2E4C9258004841D4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1AEEA9D92E4C9258004841D4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -246,13 +198,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1AEEA9D72E4C9258004841D4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -260,11 +205,6 @@
 			isa = PBXTargetDependency;
 			target = 1AEEA9C32E4C9256004841D4 /* Stopwatch */;
 			targetProxy = 1AEEA9D22E4C9258004841D4 /* PBXContainerItemProxy */;
-		};
-		1AEEA9DD2E4C9258004841D4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1AEEA9C32E4C9256004841D4 /* Stopwatch */;
-			targetProxy = 1AEEA9DC2E4C9258004841D4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -484,40 +424,6 @@
 			};
 			name = Release;
 		};
-		1AEEA9EC2E4C9258004841D4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 999A46UAZB;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = nhrysiuk.StopwatchUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Stopwatch;
-			};
-			name = Debug;
-		};
-		1AEEA9ED2E4C9258004841D4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 999A46UAZB;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = nhrysiuk.StopwatchUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Stopwatch;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -548,16 +454,26 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1AEEA9EB2E4C9258004841D4 /* Build configuration list for PBXNativeTarget "StopwatchUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1AEEA9EC2E4C9258004841D4 /* Debug */,
-				1AEEA9ED2E4C9258004841D4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1AEEA9F12E4C947F004841D4 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.21.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1AEEA9F22E4C947F004841D4 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1AEEA9F12E4C947F004841D4 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1AEEA9BC2E4C9256004841D4 /* Project object */;
 }

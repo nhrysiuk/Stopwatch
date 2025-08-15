@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  Stopwatch
-//
-//  Created by Анастасія Грисюк on 13.08.2025.
-//
-
 import SwiftUI
 
 struct ContentView: View {
